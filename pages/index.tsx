@@ -16,6 +16,9 @@ function Index(props: IndexProps) {
     <div>
       <h1>My Todo List</h1>
       <h2>Click on Todo to see it individually</h2>
+      <Link href="/todos/create">
+        <button>Create a New Todo</button>
+      </Link>
       {todos.map((todo) => (
         <div key={todo._id}>
           <Link href={`/todos/${todo._id}`}>
